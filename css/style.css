@@ -1,0 +1,240 @@
+/* вторичный цвет текста #212121 */
+
+/* основной цвет текста цвет текста #757575 */
+
+/* цвет интерактивных кнопок #2196F3 */
+/* основной цвет фона #FFFFFF */
+/* вторичный цвет фона #F5F4FA */
+:root {
+  --secondary-color-text: #212121;
+  --primary-color-text: #757575;
+  --primary-bgc: #ffffff;
+  --secondary-bgc: #2f303a;
+  --button-color: #2196f3;
+  --secondary-btn-color: #f5f4fa;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--primary-color-text);
+  background-color: var(--primary-bgc);
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+.list {
+  list-style: none;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+/* Шапка сайта */
+/* Оформление логотипа */
+.logo {
+  color: var(--secondary-color-text);
+}
+/* логотип шапки и подвала */
+.logo,
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo span {
+  color: var(--button-color);
+}
+/* Оформление навигации сайта */
+.site-nave .link {
+  color: var(--secondary-color-text);
+}
+.site-nave .link,
+.contacts .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nave .link.current {
+  color: var(--button-color);
+}
+.site-nave .link:hover,
+.site-nave .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--button-color);
+}
+.contacts .link {
+  color: var(--primary-color-text);
+}
+/* Стили для index.html*/
+/* Оформление основной страницы */
+.hero {
+  background-color: var(--secondary-bgc);
+}
+.hero-title {
+  color: var(--primary-bgc);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Кнопка */
+.hero-button {
+  display: inline-block;
+  color: var(--primary-bgc);
+  background-color: var(--button-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+}
+/* Секции */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* background-color: tomato; */
+}
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section-title {
+  color: var(--secondary-color-text);
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-title.team {
+  padding-top: 94px;
+}
+/* Премущества */
+.feature .feature-title {
+  color: var(--secondary-color-text);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.feature .text {
+  line-height: 1.71;
+}
+/* Оформление деятельности */
+
+/* Команда */
+.section.teams {
+  background-color: var(--secondary-btn-color);
+}
+.team .title {
+  color: var(--secondary-color-text);
+  font-weight: 500;
+}
+.team .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-bgc);
+}
+.team-photo {
+  margin-bottom: 30px;
+}
+.team .title,
+.team .text {
+  font-size: 16px;
+  line-height: 1.18;
+}
+.team .title {
+  margin-bottom: 10px;
+}
+.team .text {
+  margin-bottom: 30px;
+}
+/* Оформление подвала */
+.footer {
+  background-color: var(--secondary-bgc);
+}
+.footer .logo-footer {
+  display: inline-block;
+  color: var(--primary-bgc);
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.logo-footer > span {
+  color: var(--button-color);
+}
+.adress .text {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--primary-bgc);
+}
+.adress .link {
+  display: inline-block;
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+}
+
+.adress .link:hover,
+.adress .link:focus {
+  color: var(--button-color);
+}
+.adress.list {
+  padding-bottom: 60px;
+}
+/* Оформление стилей портфолио */
+.filter .btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--secondary-btn-color);
+  cursor: pointer;
+  padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-color: transparent;
+}
+.filter .btn:hover,
+.filter .btn:focus {
+  color: var(--primary-bgc);
+  background-color: var(--button-color);
+}
+.work .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-color-text);
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.work .text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-color-text);
+  margin-bottom: 20px;
+}
