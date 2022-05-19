@@ -176,6 +176,10 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
 /* Секции */
 .section {
   padding-top: 94px;
