@@ -56,8 +56,18 @@ img {
   display: flex;
   align-items: center;
 }
-.padding {
-  padding-top: 94px;
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 /* Шапка сайта */
 /* Оформление логотипа */
@@ -128,9 +138,16 @@ img {
 .hero {
   background-color: var(--secondary-bgc);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+
   color: var(--primary-bgc);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -142,11 +159,14 @@ img {
 .hero-button {
   display: inline-block;
   padding: 10px 32px;
+
   margin-top: var(--margin-item);
   min-width: 200px;
 
   color: var(--primary-bgc);
   background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
 
   font-family: inherit;
   font-weight: 700;
@@ -155,7 +175,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  border-radius: 4px;
 }
 /* Секции */
 .section {
@@ -167,7 +186,7 @@ img {
 .section-title {
   color: var(--secondary-color-text);
   font-size: 36px;
-  line-height: 1, 16;
+  line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -208,7 +227,6 @@ img {
 }
 /* Команда */
 .section.teams {
-  padding-top: 0;
   background-color: var(--secondary-btn-color);
 }
 .team {
@@ -250,12 +268,14 @@ img {
 /* Оформление подвала */
 .footer {
   background-color: var(--secondary-bgc);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .logo-footer {
   display: inline-block;
-  color: var(--primary-bgc);
-  padding-top: 60px;
   margin-bottom: 20px;
+
+  color: var(--primary-bgc);
 }
 .logo-footer > span {
   color: var(--button-color);
@@ -277,18 +297,16 @@ img {
 .adress .link:focus {
   color: var(--button-color);
 }
-.adress.list {
-  padding-bottom: 60px;
-}
+
 /* Оформление стилей портфолио */
 /* Оформление кнопок фильтра */
 .filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter .item {
   margin-left: 8px;
-  margin-bottom: 50px;
 }
 .filter .item:first-child {
   margin-left: 0;
@@ -305,7 +323,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  border-color: transparent;
+  border: none;
 }
 .filter .btn:hover,
 .filter .btn:focus {
